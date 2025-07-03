@@ -1,0 +1,4 @@
+git status - to track the changes 
+git add . or git add <file-name> -to stage the changes
+git commit -m "your comment" - to commit changes in local repo
+git push -u origin main - to push changes to central repo
