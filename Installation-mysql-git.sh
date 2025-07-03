@@ -5,7 +5,7 @@ userid=$(id -u)
 if [ $userid -ne 0 ] 
 then
     echo "Please Run the script with root user"
-    EXIT 1 # manully exit other than 0
+    EXIT 1 # manully exit other than 0 ,here 0 means success if previous command
 fi
 
 dnf install mysql -y
