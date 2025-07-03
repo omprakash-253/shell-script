@@ -6,3 +6,4 @@
  echo "current working directory is: $PWD"  #$PWD to display the current working directory
  echo "Home directory of current user: $HOME" # to display the current user home directory
  echo "Which user is running the script: $USER" # to diplay which user is running the script
+ echo "Hostname:$HOSTNAME" # to display the host name
