@@ -8,4 +8,5 @@
  echo "Which user is running the script: $USER" # to diplay which user is running the script
  echo "Hostname:$HOSTNAME" # to display the host name
  echo "process id of current shell script:$$" # to display the PID of shell which running the script currently
- sleep 60&
+ sleep 60 &
+ echo "process id of last background command:$!"
