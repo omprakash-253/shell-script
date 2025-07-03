@@ -1,0 +1,25 @@
+#!/bin/bash
+
+userid=$(id -u)
+
+if [ $userid -ne 0 ] 
+then
+    echo "Please Run the script with root user"
+    EXIT 1 # manully exit other than 0
+fi
+
+dnf install mysql -y
+
+if [ $? -ne 0 ]
+then
+    echo " Installation of mysql.. FAILURE, check log for errors to troubleshoot"
+    EXIT 1
+fi
+
+dnf install git -y
+
+if [ $? -eq 0 ]
+then 
+    echo "Installation of git .. Failure, check logs for erros to troubleshoot"
+    EXIT 1
+fi
